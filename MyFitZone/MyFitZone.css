@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+header {
+        display: flex;
+    flex-direction: column; /* para que header-content y menú queden uno debajo de otro */
+    align-items: center;    /* centra todo horizontalmente */
+    background-color: rgb(16, 43, 43);
+    color: white;
+    padding: 10px 30px;
+}
+
+.header-content {
+   display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+
+
+
+body {
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* altura mínima igual a la ventana */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(183, 240, 240);
+    text-align: center;
+}
+ 
+
+.logo {
+    width: 80px; /* ajusta el tamaño que quieras */
+    height: auto;
+}
+
+
+.menu {
+    display: flex; /* convierte el contenedor en uno flexible para que se pueda organizar sus elementos */
+    justify-content: center; /* Esto centra el contenido horizontalmente */
+}
+
+.menu nav ul {
+    list-style: none; /* Quita los puntos (•) que aparecen por defecto en las listas */
+    display: flex; /*  Convierte el elemento (en este caso <ul>) en un contenedor flex, 
+    lo que permite que sus elementos hijos (los <li>) se distribuyan en línea horizontal automáticamente. */
+    gap: 20px; /* Agrega espacio de 20 píxeles entre los elementos hijos, en este caso, entre cada <li> */
+    padding: 0; /*  Elimina el espaciado interno que viene por defecto en las listas. */
+    margin: 0; /*  Quita el espacio exterior que también viene por defecto en listas. */
+}
+
+.menu nav ul li a {
+    text-decoration: none; /* quita la linea subrayada */
+    color: #ccc8c8; /* cambia el color del enlace */
+    font-weight: bold; /*  Hace que el texto esté en negrita (más grueso o fuerte) */
+   transition: color 0.3s, transform 0.3s; /* animación suave */
+}
+
+.menu nav ul li a:hover {
+    color: #f7fa62; /* cambia este color al que quieras */
+    transform: scale(1.1); /* agranda un poco el enlace */
+}
+
+
+main {
+    flex: 1;  /* ocupa el espacio restante */
+    padding: 30px;
+}
+
+p {
+  margin: 0 200px 15px 200px;  /* margen arriba 0, derecha 20px, abajo 15px, izquierda 20px */
+  line-height: 1.5;           /* mejora la lectura, separación entre líneas */
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: darkgreen;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+footer {
+  background-color: rgb(16, 43, 43);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+

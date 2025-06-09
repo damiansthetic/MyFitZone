@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyFitZone </title>
+    
+    <link rel="stylesheet" href="acceder.css" />
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+        <img src="imagenes/Logo.png"  class="logo">
+        <h1>MyFitZone</h1><br>
+        </div>
+
+        <div class="menu">
+        <nav>
+           <ul>
+            <li><a href="MyFitZone.html"> Inicio </a></li>
+            <li><a href="rutinas.html"> Rutinas </a></li>
+            <li><a href="Suplementacion.html"> Suplementacion</a></li>
+            <li><a href="Asesoramiento.html"> Asesoramiento </a></li>
+            <li><a href="Acceder.html "> Acceder </a></li>
+            
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+    
+<main>
+
+<div class="imagen-lateral">
+    <img src="imagenes/imagen_acceder.jpg" alt="Marca de agua MyFitZone">
+  </div>
+
+
+   <section class="login-section">
+  <h2>Acceder</h2>
+  <form id="loginForm" onsubmit="return validarLogin()">
+    <label for="usuario">Usuario:</label><br>
+    <input type="text" id="usuario" name="usuario" required><br><br>
+
+    <label for="contrasena">Contraseña:</label><br>
+    <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+    <button type="submit">Iniciar sesión</button>
+    <p id="mensaje"></p>
+  </form>
+</section>
+
+
+
+
+ <!-- Botón de Registrarse -->
+  <div class="register-section">
+    <h2>¿Nuevo usuario?</h2>
+    <p>Crea una cuenta para acceder a todos los recursos</p>
+    <a href="registro.html"><button >Registrarse</button></a>
+  </div>
+</section>
+
+
+
+
+<script>
+  function validarLogin() {
+    const usuario = document.getElementById("usuario").value;
+    const contrasena = document.getElementById("contrasena").value;
+    const mensaje = document.getElementById("mensaje");
+
+    // Usuario y contraseña "correctos" de ejemplo
+    if (usuario === "admin" && contrasena === "1234") {
+      mensaje.textContent = "¡Inicio de sesión exitoso!";
+      mensaje.style.color = "green";
+    } else {
+      mensaje.textContent = "Usuario o contraseña incorrectos.";
+      mensaje.style.color = "red";
+    }
+
+    return false; // evita que el formulario recargue la página
+  }
+</script>
+</main>
+
+
+
+ <footer>
+        <p>&copy; Pagina web en estado de mejora</p>
+    </footer>
+ <script src="script.js"> </script>
+</body>
+</html>

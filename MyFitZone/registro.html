@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyFitZone </title>
+    <link rel="stylesheet" href="MyFitZone.css" />
+    <link rel="stylesheet" href="acceder.css" />
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+        <img src="imagenes/Logo.png"  class="logo">
+        <h1>MyFitZone</h1><br>
+        </div>
+
+        <div class="menu">
+        <nav>
+           <ul>
+            <li><a href="MyFitZone.html"> Inicio </a></li>
+            <li><a href="rutinas.html"> Rutinas </a></li>
+            <li><a href="Suplementacion.html"> Suplementacion</a></li>
+            <li><a href="Asesoramiento.html"> Asesoramiento </a></li>
+            <li><a href="Acceder.html "> Acceder </a></li>
+
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+    
+
+ <section class="login-section">
+    <h2>Formulario de Registro</h2>
+    <form id="registroForm" action="guardar_usuario.php" method="POST">
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre" required><br><br>
+
+      <label>Apellidos:</label><br>
+      <input type="text" name="apellidos" required><br><br>
+
+      <label>Dirección:</label><br>
+      <input type="text" name="direccion" required><br><br>
+
+      <label>Código Postal:</label><br>
+      <input type="text" name="cp" required><br><br>
+
+      <label>Teléfono:</label><br>
+      <input type="tel" name="telefono" required><br><br>
+
+      <label>ID Usuario:</label><br>
+      <input type="text" name="id_usuario" required><br><br>
+
+      <label>Correo Electrónico:</label><br>
+      <input type="email" name="correo" required><br><br>
+
+      <button type="submit" onclick="aceptarRegistro()">Aceptar</button><br><br>
+      <button type="button" onclick="cancelarRegistro()">Cancelar</button>
+    </form>
+  </section>
+
+  <script>
+    function aceptarRegistro() {
+      alert("Registro enviado correctamente");
+      // Aquí puedes luego añadir validación, guardado, etc.
+    }
+
+    function cancelarRegistro() {
+      if (confirm("¿Seguro que quieres cancelar el registro?")) {
+        window.location.href = "MyFitZone.html";
+      }
+    }
+  </script>
+
+
+
+
+<br><br>
+<footer>
+        <p>&copy; Pagina web en estado de mejora</p>
+    </footer>
+ <script src="script.js"> </script>
+</body>
+</html>

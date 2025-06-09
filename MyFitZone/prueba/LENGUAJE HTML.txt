@@ -1,0 +1,13 @@
+LENGUAJE HTML
+<nav> contiene menú con enlaces para la pagina web
+<ul> lista no ordenada (sin numeración, normalmente con viñetas).
+<li> cada elemento de la lista
+<footer> contiene información adicional o complementaria
+
+
+
+
+
+
+
+
